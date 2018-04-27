@@ -1,0 +1,64 @@
+/* Copyright (c) 2018 Cláudio Patrício
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+.container {
+	position: relative;
+}
+#overlay {
+	position: absolute;
+	left: -moz-calc(50% - 390px); /* Firefox */
+	left: -webkit-calc(50% - 390px); /* Chrome and Safari */
+	left: -o-calc(50% - 390px); /* Opera */
+	left: calc(50% - 390px); /* Default */
+	top: 10px;
+	text-align: left;
+	color: white;
+	font-family: monospace;
+}
+#overlay_message {
+	position: absolute;
+	top: -moz-calc(50% - 40px); /* Firefox */
+	top: -webkit-calc(50% - 40px); /* Chrome and Safari */
+	top: -o-calc(50% - 40px); /* Opera */
+	top: calc(50% - 40px); /* Default */
+	text-align: center;
+	color: white;
+	font-family: monospace;
+	font-size: 40px;
+	width: 100%;
+}
+#overlay_commands {
+	position: absolute;
+	right: -moz-calc(50% - 400px); /* Firefox */
+	right: -webkit-calc(50% - 400px); /* Chrome and Safari */
+	right: -o-calc(50% - 400px); /* Opera */
+	right: calc(50% - 400px); /* Default */
+	top: 0px;
+	text-align: right;
+	color: white;
+	font-family: monospace;
+}
+.txt {
+	background-color: rgba(255, 0, 0, 0.7);
+}
+.txt_aux {
+	font-size: 20px;
+}
